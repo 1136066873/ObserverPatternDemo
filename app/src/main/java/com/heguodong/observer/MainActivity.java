@@ -10,6 +10,8 @@ import android.widget.TextView;
  *
  * 珠宝商运送一批钻石，有黄金强盗准备抢劫，珠宝商雇佣了私人保镖，警察局也派人护送，于是当运输车上路的时
  * 候，强盗保镖警察都要观察运输车一举一动，
+ *
+ * https://blog.csdn.net/jason0539/article/details/45055233
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         longMenBiaoJuobserved.addWatcher(thiefObserver);
 
         longMenBiaoJuobserved.notifyWatchers();
+        longMenBiaoJuobserved.removeWatcher(thiefObserver);
 
 
 

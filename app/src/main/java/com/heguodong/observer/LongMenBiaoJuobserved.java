@@ -21,7 +21,7 @@ public class LongMenBiaoJuobserved implements observed {
 
     @Override
     public void removeWatcher(Observer observer) {
-        Log.e("heguodong","我是龙门镖局车队，我将要移除 " + observer);
+        Log.e("heguodong","我是龙门镖局车队，我将要移除 " + observer.getClass().getName());
         list.remove(observer);
     }
 
